@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btn_submit"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tx0t4"
+        android:layout_marginTop="28dp"
+        android:text="Facebook" />
+
+    <TextView
+        android:id="@+id/tx0t4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txt03"
+        android:layout_marginTop="22dp"
+        android:text="Tel" />
+
+    <TextView
+        android:id="@+id/txt01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="37dp"
+        android:text="Age" />
+
+    <TextView
+        android:id="@+id/txt02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txt01"
+        android:layout_marginTop="25dp"
+        android:text="Nickname" />
+
+    <TextView
+        android:id="@+id/txt03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txt02"
+        android:layout_marginTop="24dp"
+        android:text="Birthday" />
+
+    <EditText
+        android:id="@+id/edt03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tx0t4"
+        android:layout_alignLeft="@+id/edt02"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/edt04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tx0t4"
+        android:layout_alignBottom="@+id/tx0t4"
+        android:layout_alignLeft="@+id/edt03"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/edt05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt05"
+        android:layout_alignBottom="@+id/txt05"
+        android:layout_alignLeft="@+id/edt04"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/edt02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edt03"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/txt02"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/edt01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt02"
+        android:layout_alignLeft="@+id/edt02"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/btn_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edt05"
+        android:layout_below="@+id/edt05"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="40dp"
+        android:text="save" />
+
+</RelativeLayout>
