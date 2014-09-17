@@ -1,12 +1,14 @@
 package app.com.profile2;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 	
 	public class edit_hawa extends Activity implements OnClickListener {
@@ -31,6 +33,11 @@ import android.widget.EditText;
 	}
 	@Override
 	public void onClick(View v) {
+		
+		save();
+		
+		
+		
 	switch (v.getId()) {
 	case R.id.btn_sub:
 	txt01 = (edt01.getText().toString());
@@ -52,6 +59,29 @@ import android.widget.EditText;
 	break;
 	}
   }
+	public boolean save(){
+		final AlertDialog.Builder ab = new AlertDialog.Builder(this);
+		AlertDialog vv = ab.create();
+		
+		dbcontroler_129 dbclass = new dbcontroler_129(this);
+		long savedata = dbclass.insertData(edt01.getText().toString(),edt02.getText().toString()
+				,edt03.getText().toString(),edt04.getText().toString(),edt05.getText().toString());
+				
+		if (savedata <= 0) {
+			vv.setMessage("Error !!!!");
+			vv.show();
+			return false;
+		}		
+				
+		Toast.makeText(getApplicationContext(), "Add Data Successfully",Toast.LENGTH_SHORT).show();
+		return true;
+	}
+	
+	
+	
+	
+	
+	
 }
 
 

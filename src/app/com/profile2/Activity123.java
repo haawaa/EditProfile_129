@@ -4,13 +4,9 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.ImageView;
-import android.widget.EditText;
 public class Activity123 extends Activity implements OnClickListener {
 private Button btn1, btn2;
 private TextView txt01, txt02, txt03, txt04, txt05;
@@ -20,6 +16,15 @@ protected void onCreate(Bundle savedInstanceState) {
 super.onCreate(savedInstanceState);
 setContentView(R.layout.layout123);
 ViewMatching();
+
+//dbcontroler_129 bdDbcontroler_129=new dbcontroler_129(this);
+//bdDbcontroler_129.getWritableDatabase();
+
+
+
+
+
+
 }
 private void ViewMatching() {
 btn1 = (Button) findViewById(R.id.btn_save_1);
